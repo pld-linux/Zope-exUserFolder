@@ -4,7 +4,7 @@ Summary:	Extensible User Folder
 Summary(pl):	Rozszerzalne foldery u¿ytkowników
 Name:		Zope-%{zope_subname}
 Version:	0.50.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Tools
 Source0:	http://dl.sourceforge.net/exuserfolder/%{zope_subname}-%{fversion}.tgz
