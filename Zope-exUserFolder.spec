@@ -4,7 +4,7 @@ Summary:	Extensible User Folder
 Summary(pl):	Rozszerzalne foldery u¿ytkowników
 Name:		Zope-%{zope_subname}
 Version:	0.50.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Tools
 Source0:	http://dl.sourceforge.net/exuserfolder/%{zope_subname}-%{fversion}.tgz
@@ -14,7 +14,7 @@ URL:		http://www.zope.org/Members/TheJester/exUserFolder/
 Requires(post,postun):	/usr/sbin/installzopeproduct
 %pyrequires_eq	python-modules
 Requires:	Zope
-Requires:	Zope-CMF >= 1.4.2
+Requires:	Zope-CMF >= 1:1.4.2
 Requires:	Zope-CMFPlone >= 2.0
 Requires:	Zope-archetypes >= 1.2.5
 Requires:	Zope-stripogram
