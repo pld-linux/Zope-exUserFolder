@@ -1,0 +1,10 @@
+--- AuthSources/smbAuthSource/smbAuthSource.py~	2004-11-10 15:15:51.000000000 +0100
++++ AuthSources/smbAuthSource/smbAuthSource.py	2004-12-13 02:54:52.686324400 +0100
+@@ -119,6 +119,7 @@
+ 
+ 		if self.currentPropSource:
+ 			roles=self.currentPropSource.getUserProperty(username=username, key='_roles', default=[])
++			roles.append('Member')
+ 			groups=self.currentPropSource.getUserProperty(username=username, key='_groups', default=[])
+ 
+ 		if not roles:
