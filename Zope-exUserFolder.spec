@@ -33,6 +33,7 @@ wymagaj±cymi autoryzacji oddzielonej od kont u¿ytkowników.
 %prep
 %setup -q -n %{zope_subname}
 %patch0
+find . -type f -name .cvsignore | xargs rm -rf
 
 %install
 rm -rf $RPM_BUILD_ROOT
