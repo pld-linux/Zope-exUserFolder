@@ -22,12 +22,13 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Extensible User Folder is a user folder that requires the authentication of
-users to be removed from the storage of properties for users.
+Extensible User Folder is a user folder that requires the
+authentication of users to be removed from the storage of properties
+for users.
 
 %description -l pl
-Rozszerzalne foldery u¿ytkowników s± folderami u¿ytkowników wymagaj±cymi
-autoryzacji oddzielonej od kont u¿ytkowników.
+Rozszerzalne foldery u¿ytkowników s± folderami u¿ytkowników
+wymagaj±cymi autoryzacji oddzielonej od kont u¿ytkowników.
 
 %prep
 %setup -q -n %{zope_subname}
