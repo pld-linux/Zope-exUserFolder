@@ -12,6 +12,7 @@ Source0:	http://dl.sourceforge.net/exuserfolder/%{zope_subname}-%{fversion}.tgz
 Patch0:		%{name}-user_is_a_member.patch
 URL:		http://www.zope.org/Members/TheJester/exUserFolder/
 Requires(post,postun):	/usr/sbin/installzopeproduct
+BuildRequires:  python
 %pyrequires_eq	python-modules
 Requires:	Zope
 Requires:	Zope-CMF >= 1:1.4.2
