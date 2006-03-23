@@ -11,8 +11,9 @@ Source0:	http://dl.sourceforge.net/exuserfolder/%{zope_subname}-%{fversion}.tgz
 # Source0-md5:	da885980aa9f7f8d19bf3f260242b2fe
 Patch0:		%{name}-user_is_a_member.patch
 URL:		http://www.zope.org/Members/TheJester/exUserFolder/
-Requires(post,postun):	/usr/sbin/installzopeproduct
 BuildRequires:	python
+BuildRequires:	rpmbuild(macros) >= 1.268
+Requires(post,postun):	/usr/sbin/installzopeproduct
 %pyrequires_eq	python-modules
 Requires:	Zope
 Requires:	Zope-CMF >= 1:1.4.2
@@ -54,16 +55,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 /usr/sbin/installzopeproduct %{_datadir}/%{name} %{zope_subname}
-if [ -f /var/lock/subsys/zope ]; then
-	/etc/rc.d/init.d/zope restart >&2
-fi
+%service -q zope restart
 
 %postun
 if [ "$1" = "0" ]; then
 	/usr/sbin/installzopeproduct -d %{zope_subname}
-	if [ -f /var/lock/subsys/zope ]; then
-		/etc/rc.d/init.d/zope restart >&2
-	fi
+	%service -q zope restart
 fi
 
 %files
