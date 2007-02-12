@@ -1,7 +1,7 @@
 %define		fversion	%(echo %{version} |tr . _)
 %define		zope_subname	exUserFolder
 Summary:	Extensible User Folder
-Summary(pl):	Rozszerzalne foldery uøytkownikÛw
+Summary(pl.UTF-8):   Rozszerzalne foldery u≈ºytkownik√≥w
 Name:		Zope-%{zope_subname}
 Version:	0.50.0
 Release:	3
@@ -28,9 +28,9 @@ Extensible User Folder is a user folder that requires the
 authentication of users to be removed from the storage of properties
 for users.
 
-%description -l pl
-Rozszerzalne foldery uøytkownikÛw s± folderami uøytkownikÛw
-wymagaj±cymi autoryzacji oddzielonej od kont uøytkownikÛw.
+%description -l pl.UTF-8
+Rozszerzalne foldery u≈ºytkownik√≥w sƒÖ folderami u≈ºytkownik√≥w
+wymagajƒÖcymi autoryzacji oddzielonej od kont u≈ºytkownik√≥w.
 
 %prep
 %setup -q -n %{zope_subname}
