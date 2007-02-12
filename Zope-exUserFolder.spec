@@ -1,7 +1,7 @@
 %define		fversion	%(echo %{version} |tr . _)
 %define		zope_subname	exUserFolder
 Summary:	Extensible User Folder
-Summary(pl.UTF-8):   Rozszerzalne foldery użytkowników
+Summary(pl.UTF-8):	Rozszerzalne foldery użytkowników
 Name:		Zope-%{zope_subname}
 Version:	0.50.0
 Release:	3
